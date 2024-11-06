@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #f3f3f3, #ffffff);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .bio {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            padding: 0 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 20px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .link-button i {
+            margin-right: 8px;
+        }
+
+        .whatsapp { background: #25D366; }
+        .gmail { background: #EA4335; }
+        .github { background: #333; }
+        .workana { background: #00A650; }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .bio {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="larissa.jpg" alt="Foto de Perfil" class="profile-img">
+        <h1 class="name">Larissa Oliveira</h1>
+        <p class="bio">Desenvolvedora Full Stack | Especialista em Desenvolvimento Web e Mobile</p>
+        
+        <div class="links">
+            <a href="https://wa.me/559232493867" class="link-button whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            <a href="mailto:larissaoliveira.dev@gmail.com" class="link-button gmail">
+                <i class="far fa-envelope"></i>
+                Gmail
+            </a>
+            <a href="https://github.com/lalycris" class="link-button github">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+            <a href="https://www.workana.com/freelancer/fc55d4a6331309d0b24164a66d9cb5ae" class="link-button workana">
+                <i class="fas fa-briefcase"></i>
+                Workana
+            </a>
+        </div>
+    </div>
+</body>
+</html>
